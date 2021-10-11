@@ -11,7 +11,7 @@ for x in range(1,21):
     user = int(input('guess the number: '))
     if abs(user - number) <= 50 and abs(user - number) > 20 :
         print('hot')
-    if abs(user - number) <= 20:
+    if abs(user - number) <= 20 and abs(user - number) > 10:
         print('very hot')
     if abs(user - number) <= 10 :
         print('Very very hot')
