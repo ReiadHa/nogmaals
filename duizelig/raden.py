@@ -21,8 +21,11 @@ for x in range(1,21):
         print(round)
         score = score +1
         break
+
  if user != number:
     print(f'your guessed the incorrect number, the correct number is: {number} ')
-
+ again = input('do u want to play again: ')
+ if again == 'N' or again=='n' or again=='no' or again=='No':
+    break
  number = random.randint(1,1000)
 print('Your total score is: ',score)
